@@ -1,0 +1,39 @@
+body{
+    background-color: lightpink; /* just background works the same to set bg colour */
+    color: darkred;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: lightgray;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* NAVIGATION */
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly; /* to distribute the links horizontally */
+    padding-left: 0; /* this removes the indent space by default on the list */
+}
+
+h1{
+    font-family: "Macondo", cursive;
+    /* this list will let your browser fall back on fonts if it can't find the first */
+}
+
+@media screen and (min-width:700px) {
+    main{
+        /* make the element inside of main sit next to each other */
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    ul{
+        display: block;
+        padding-left: 2em;
+    }
+}
